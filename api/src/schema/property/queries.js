@@ -30,6 +30,12 @@ export const properties = {
         fields: {
           livingSurface_lte: { type: GraphQLInt },
           livingSurface_gte: { type: GraphQLInt },
+          landSurface_lte: { type: GraphQLInt },
+          landSurface_gte: { type: GraphQLInt },
+          numberOfRooms_lte: { type: GraphQLInt },
+          numberOfRooms_gte: { type: GraphQLInt },
+          numberOfParkings_lte: { type: GraphQLInt },
+          numberOfParkings_gte: { type: GraphQLInt },
         },
       }),
     },
