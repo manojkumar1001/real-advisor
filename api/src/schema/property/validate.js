@@ -15,7 +15,7 @@ export default async function(input: any, ctx: Context) {
       .field('numberOfRooms', { as: 'number_of_rooms' })
       .isFloat({ min: 1, max: 500 })
       .field('numberOfParkings', { as: 'number_of_parkings' })
-      .isInt({ min: 0, max: 50 }),
+      .isFloat({ min: 1, max: 50 }),
   );
 
   return data;

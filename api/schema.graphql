@@ -73,14 +73,20 @@ type PropertyConnectionEdge {
 input PropertyFilters {
   livingSurface_lte: Int
   livingSurface_gte: Int
+  landSurface_lte: Int
+  landSurface_gte: Int
+  numberOfRooms_lte: Int
+  numberOfRooms_gte: Int
+  numberOfParkings_lte: Int
+  numberOfParkings_gte: Int
 }
 
 input PropertyInput {
   id: ID
   livingSurface: Float
   landSurface: Float
-  numberOfParkings: Int
   numberOfRooms: Float
+  numberOfParkings: Int
 }
 
 type Query {
